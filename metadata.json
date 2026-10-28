@@ -1,0 +1,6 @@
+{
+  "name": "ارتواء | Irtiwaa - Smart Fluid Tracker",
+  "description": "تطبيق متقدم لتتبع شرب السوائل، كمياتها، عمليات التبول والتوازن المائي الحيوي في الجسم بنظام Hydro-Bio Glass ودعم كامل للغة العربية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

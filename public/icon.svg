@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0B1120" />
+      <stop offset="100%" stopColor="#1E293B" />
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#06B6D4" />
+      <stop offset="60%" stopColor="#0284C7" />
+      <stop offset="100%" stopColor="#3B82F6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" floodColor="#06B6D4" floodOpacity="0.8" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#06B6D4" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Centered Droplet Group (scaled by ~3.6 and centered) -->
+  <g transform="translate(76, 40) scale(3.6)">
+    <!-- Water Droplet Path -->
+    <path
+      d="M50 8 C50 8 16 55 16 82 C16 100.7 31.3 114 50 114 C68.7 114 84 100.7 84 82 C84 55 50 8 50 8 Z"
+      fill="url(#dropGrad)"
+      fill-opacity="0.3"
+      stroke="url(#dropGrad)"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- ECG / Vital Wave passing through droplet -->
+    <path
+      d="M24 78 L38 78 L44 64 L50 94 L56 70 L62 82 L76 78"
+      stroke="#38BDF8"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#glow)"
+    />
+    <!-- Glowing Core Dot -->
+    <circle cx="50" cy="94" r="3.5" fill="#67E8F9" />
+  </g>
+</svg>
